@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+/* HERO section */
+.hero-section {
+  /* background-color: red; */
+  background-image: url("./img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  /* max-width: 95%; */
+  padding: 25px 0 0 70px;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  padding-left: 490px;
+  margin-top: 50px;
+}
+.navigation a:link {
+  text-decoration: none;
+  padding-right: 35px;
+}
+.navigation a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.para {
+  color: white;
+  font-size: 47px;
+  text-transform: uppercase;
+  list-style: none;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+.hungry {
+  color: white;
+  background-color: #e67e22;
+  height: 45px;
+  width: 150px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  margin-right: 7px;
+}
+.show-me-more {
+  color: #e67e22;
+  background: none;
+  height: 45px;
+  border-radius: 50px;
+  border: 1.5px solid #e67e22;
+  width: 190px;
+}
