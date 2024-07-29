@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 /*******************************************/
@@ -25,6 +26,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./img/hero.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -44,10 +46,19 @@ nav {
   /*  position: sticky;
   top: 0; */
 }
+
+.fa-bars {
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  top: 35px;
+  right: 100px;
+  display: none;
+}
 .navigation {
   display: flex;
   list-style: none;
-  padding-left: 400px;
+  padding-left: 350px;
   margin-top: 50px;
 }
 .navigation .food:link {
@@ -368,6 +379,9 @@ i {
   margin: 0 15px 15px 0;
   width: 20px;
 }
+.city-text .fa-twitter {
+  color: #e67e22;
+}
 .fa-brands:hover {
   color: blue;
 }
@@ -382,6 +396,7 @@ i {
     url("./img/back-customers.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   background-repeat: no-repeat;
   padding: 50px 0 50px 0;
@@ -513,6 +528,7 @@ i {
   border: none;
   width: 150px;
   margin-left: 50px;
+  color: white;
 }
 .sign-in {
   height: 45px;
@@ -627,7 +643,7 @@ footer {
 .tools:hover {
   color: white;
 }
-.fa-facebook,
+.iteam-2-tool .fa-facebook,
 .fa-twitter,
 .fa-google-plus-g,
 .fa-square-instagram {
@@ -653,4 +669,432 @@ footer {
 }
 .footer-text {
   text-align: center;
+}
+/* media quary */
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+  /* HERO SESSION */
+  .hero-section {
+    padding: 30px;
+    width: 768px;
+  }
+  .navigation {
+    display: none;
+  }
+  .fa-bars {
+    display: flex;
+    right: -10px;
+  }
+  .hero-text {
+    font-size: 30px;
+  }
+  .hungry-btn {
+    width: 150px;
+    font-size: 16px;
+  }
+  .show-me-more-btn {
+    width: 150px;
+    font-size: 16px;
+  }
+  /* FEATURE SECTION*/
+  .feature-section {
+    width: 768px;
+    padding: 0 30px 0 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .ft-header {
+    font-size: 25px;
+  }
+  .line {
+    margin-left: 315px;
+    margin-bottom: 30px;
+  }
+  .feature-text {
+    font-size: 16px;
+    text-align: start;
+  }
+  .feature-container {
+    margin-top: 30px;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    padding: 0;
+  }
+  .container-1 {
+    width: 100%;
+  }
+  .container-2 {
+    width: 100%;
+  }
+  .container-3 {
+    width: 100%;
+  }
+  .container-4 {
+    width: 100%;
+  }
+  .icon-head {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .icon-para {
+    font-size: 16px;
+  }
+  /* Meal section */
+  .meal-section {
+    width: 768px;
+  }
+  .app {
+    width: 768px;
+  }
+  .app-container {
+    padding: 30px 0 0 30px;
+  }
+  .app-head {
+    font-size: 25px;
+  }
+  .app-line {
+    margin: 0 auto 50px auto;
+  }
+  .app-container-2 {
+    flex-direction: column;
+  }
+  .app-img-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .app-store {
+    margin: 0;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+  }
+  .app-list {
+    font-size: 16px;
+  }
+  .app-text {
+    font-size: 16px;
+  }
+  .one,
+  .two,
+  .three {
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+  }
+  .first-text,
+  .second-text,
+  .thrid-text {
+    width: 100%;
+  }
+  .city-container {
+    margin: 40px;
+  }
+  .city-head {
+    font-size: 25px;
+  }
+  .city-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .city-image {
+    width: 680px;
+  }
+  .city-name {
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 14px;
+  }
+  .contact i {
+    width: 14px;
+    font-size: 14px;
+  }
+  .customer {
+    width: 768px;
+    padding: 40px 30px;
+  }
+  .customer-head {
+    font-size: 25px;
+  }
+  .customer-comment {
+    font-size: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .customer-text {
+    width: 100%;
+    padding-left: 17px;
+  }
+  .sign-up-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sign-up-head {
+    font-size: 25px;
+  }
+  .sign-up .app-line {
+    margin: 0 auto 50px auto;
+  }
+  .sign-up-content-1,
+  .sign-up-content-2,
+  .sign-up-content-3 {
+    width: 720px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sign-now,
+  .sign-in {
+    align-self: center;
+  }
+  .contact-us {
+    width: 768px;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .contact-us-head {
+    font-size: 25px;
+  }
+  .label-list {
+    flex-direction: column;
+  }
+  .label-list div {
+    margin-bottom: 20px;
+  }
+  .other-list {
+    gap: 10px;
+  }
+  .input-list {
+    width: 100%;
+  }
+  input[type="text"] {
+    height: 35px;
+  }
+  input[type="submit"] {
+    margin-right: 500px;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .footer-nav-list {
+    font-size: 13px;
+    align-self: flex-start;
+  }
+  .footer-list {
+    align-self: flex-end;
+  }
+  .footer-text {
+    font-size: 13px;
+  }
+  .fa-facebook {
+    font-size: 20px;
+    margin-right: 25px;
+    width: 20px;
+    color: #747474;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-section {
+    padding: 30px 30px 320px 30px;
+    width: 100%;
+  }
+  .logo {
+    width: 180px;
+  }
+  .fa-bars {
+    font-size: 50px;
+    right: 70px;
+    top: 50px;
+  }
+  .hero-text {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .hungry-btn {
+    width: 250px;
+    height: 70px;
+    font-size: 25px;
+  }
+  .show-me-more-btn {
+    width: 250px;
+    height: 70px;
+    font-size: 25px;
+  }
+  .ft-header {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .feature-text {
+    font-size: 30px;
+  }
+  .icon-head {
+    font-size: 35px;
+  }
+  .app-head,
+  .city-head,
+  .sign-up-head,
+  .customer-head,
+  .contact-us-head {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .icon-para {
+    font-size: 30px;
+  }
+  .app-img-container {
+    width: 250px;
+  }
+  .app-text-container {
+    margin: 50px auto 0;
+  }
+  .app-list {
+    font-size: 35px;
+  }
+  .one {
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 47px;
+  }
+  .two,
+  .three {
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 47px;
+  }
+  .app-text {
+    font-size: 30px;
+  }
+  .app-store {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .apple-store,
+  .google-play {
+    width: 300px;
+    margin: 0;
+  }
+  .city-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .city-image {
+    width: 600px;
+  }
+  .city-name {
+    font-size: 35px;
+  }
+  .contact {
+    font-size: 30px;
+  }
+  .contact i {
+    font-size: 30px;
+    width: 40px;
+  }
+  .customer-comment {
+    margin: 0 auto;
+  }
+  .customer-1-head {
+    font-size: 100px;
+  }
+  .customer-text {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .profile-img {
+    width: 100px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+  }
+  .profile-name {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .sign-up-content-1,
+  .sign-up-content-2,
+  .sign-up-content-3 {
+    width: 100%;
+  }
+  .sign-up-content-head {
+    font-size: 35px;
+  }
+  .price {
+    font-size: 80px;
+  }
+  .price-month {
+    font-size: 30px;
+  }
+  .content-text {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .info {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .sign-now,
+  .sign-in {
+    font-size: 30px;
+    width: 250px;
+    height: 80px;
+    margin: 20px auto;
+  }
+  .label-list {
+    font-size: 30px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    font-size: 30px;
+    height: 60px;
+  }
+  textarea {
+    height: 150px;
+    margin-bottom: 50px;
+  }
+  textarea::placeholder {
+    font-size: 30px;
+  }
+  input[type="submit"] {
+    height: 80px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 50px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav-list {
+    font-size: 25px;
+    align-items: center;
+    margin: 0 auto 20px;
+  }
+  .footer-list {
+    font-size: 35px;
+    justify-content: center;
+    align-self: center;
+  }
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+  footer .fa-brands {
+    font-size: 30px;
+  }
+  .footer-text {
+    font-size: 25px;
+  }
 }
